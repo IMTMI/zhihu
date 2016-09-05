@@ -34,9 +34,6 @@ public class ZhihuLogin implements Login{
 	public String login() throws Exception {
 		 List<NameValuePair> valuePairs = new LinkedList<NameValuePair>();
 	        valuePairs.add(new BasicNameValuePair("_xsrf" , XsrfValueGet.xsrfValue));//缺少这个值会报错
-	        //valuePairs.add(new BasicNameValuePair("email", "953007630@qq.com"));
-	        valuePairs.add(new BasicNameValuePair("email", "3321490249@qq.com"));
-	        valuePairs.add(new BasicNameValuePair("password","p123456789"));
 	        valuePairs.add(new BasicNameValuePair("rememberme", "true"));
 
 	        //获取验证码
